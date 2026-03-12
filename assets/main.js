@@ -25,7 +25,11 @@
   const applyBusinessInfo = () => {
     setLink('[data-bind="phone-link"]', config.phoneDisplay, config.phoneHref);
     setLink('[data-bind="email-link"]', config.emailDisplay, config.emailHref);
-    setLink('[data-bind="instagram-link"]', config.instagramDisplay, config.instagramHref);
+    setLink(
+      '[data-bind="instagram-link"]',
+      config.instagramDisplay,
+      config.instagramHref
+    );
     setText('[data-bind="service-area"]', config.serviceArea);
   };
 
@@ -78,7 +82,8 @@
 
     form.addEventListener("submit", (event) => {
       event.preventDefault();
-      note.textContent = "Demo mode only. Connect this form to a real form service before launch.";
+      note.textContent =
+        "Demo mode only. Connect this form to a real form service before launch.";
     });
   };
 
