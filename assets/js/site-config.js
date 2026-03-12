@@ -3,10 +3,10 @@ window.SITE_CONFIG = {
   phoneDisplay: "(469) 207-8693",
   phoneHref: "tel:+14692078693",
   emailDisplay: "bros-detailing@mail.com",
-emailHref: "mailto:bros-detailing@mail.com",
+  emailHref: "mailto:bros-detailing@mail.com",
   serviceArea: "The Woodlands / Tx.",
-  instagramDisplay: "@l.brothers.detail",
-  instagramHref: "https://www.instagram.com/l.brothers.detail",
+  instagramDisplay: "@1.brothers.detail",
+  instagramHref: "https://www.instagram.com/1.brothers.detail",
   images: {
     hero: "assets/images/hero.svg",
     about: "assets/images/about.png",
