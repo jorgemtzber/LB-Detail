@@ -9,7 +9,7 @@ window.SITE_CONFIG = {
   instagramHref: "https://www.instagram.com/1.brothers.detail",
   images: {
     hero: "assets/images/hero.svg",
-    about: "assets/images/about.png",
+about: "assets/images/about-v2.png",
     "gallery-1": "assets/images/gallery-1.svg",
     "gallery-2": "assets/images/gallery-2.svg",
     "gallery-3": "assets/images/gallery-3.svg",
