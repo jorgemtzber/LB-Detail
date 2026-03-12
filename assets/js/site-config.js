@@ -1,0 +1,20 @@
+window.SITE_CONFIG = {
+  businessName: "Local Bros Auto Detail",
+  phoneDisplay: "(555) 555-5555",
+  phoneHref: "tel:+15555555555",
+  emailDisplay: "hello@example.com",
+  emailHref: "mailto:hello@example.com",
+  serviceArea: "Your city / service region",
+  instagramDisplay: "@yourhandle",
+  instagramHref: "https://instagram.com/yourhandle",
+  images: {
+    hero: "assets/images/hero.svg",
+    about: "assets/images/about.svg",
+    "gallery-1": "assets/images/gallery-1.svg",
+    "gallery-2": "assets/images/gallery-2.svg",
+    "gallery-3": "assets/images/gallery-3.svg",
+    "gallery-4": "assets/images/gallery-4.svg",
+    "gallery-5": "assets/images/gallery-5.svg",
+    "gallery-6": "assets/images/gallery-6.svg",
+  },
+};
