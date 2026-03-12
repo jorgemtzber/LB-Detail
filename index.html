@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Local Bros Auto Detail</title>
+    <meta
+      name="description"
+      content="Premium mobile auto detailing services with a clean, modern one-page layout."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ["Inter", "ui-sans-serif", "system-ui", "sans-serif"],
+            },
+            boxShadow: {
+              glow: "0 0 40px rgba(255,255,255,0.12)",
+            },
+          },
+        },
+      };
+    </script>
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <script src="assets/js/site-config.js"></script>
+  </head>
+  <body class="bg-black text-white font-sans antialiased">
+    <div class="site-shell overflow-x-hidden">
+      <header>
+        <nav
+          id="site-nav"
+          class="fixed inset-x-0 top-0 z-50 border-b border-white/10 bg-black/85 backdrop-blur-md transition-all duration-300"
+        >
+          <div class="mx-auto flex max-w-7xl items-center justify-between px-4 py-4 sm:px-6 lg:px-8">
+            <a href="#home" class="flex items-center gap-3">
+              <div class="flex h-10 w-10 items-center justify-center rounded-sm bg-white text-black">
+                <span class="text-sm font-black tracking-[0.28em]">LB</span>
+              </div>
+              <div class="leading-none">
+                <p class="text-xs font-black uppercase tracking-[0.35em]">Local Bros</p>
+                <p class="text-[10px] uppercase tracking-[0.30em] text-white/55">Auto Detail</p>
+              </div>
+            </a>
+
+            <button
+              id="menu-toggle"
+              class="flex h-11 w-11 items-center justify-center rounded-xl border border-white/10 bg-white/5 md:hidden"
+              aria-label="Toggle mobile navigation"
+              aria-expanded="false"
+            >
+              <span class="menu-bars">
+                <span></span>
+                <span></span>
+                <span></span>
+              </span>
+            </button>
+
+            <div class="hidden items-center gap-2 md:flex">
+              <a class="nav-link" href="#home">Home</a>
+              <a class="nav-link" href="#services">Services</a>
+              <a class="nav-link" href="#about">About</a>
+              <a class="nav-link" href="#gallery">Gallery</a>
+              <a class="nav-link" href="#testimonials">Reviews</a>
+              <a class="nav-link" href="#contact">Contact</a>
+              <a
+                href="#contact"
+                class="ml-2 inline-flex items-center rounded-full bg-white px-5 py-2.5 text-sm font-bold text-black transition hover:bg-white/90"
+              >
+                Book Now
+              </a>
+            </div>
+          </div>
+
+          <div id="mobile-menu" class="mobile-menu md:hidden">
+            <div class="space-y-1 border-t border-white/10 px-4 pb-5 pt-4">
+              <a class="mobile-link" href="#home">Home</a>
+              <a class="mobile-link" href="#services">Services</a>
+              <a class="mobile-link" href="#about">About</a>
+              <a class="mobile-link" href="#gallery">Gallery</a>
+              <a class="mobile-link" href="#testimonials">Reviews</a>
+              <a class="mobile-link" href="#contact">Contact</a>
+              <a
+                href="#contact"
+                class="mt-3 block rounded-xl bg-white px-4 py-3 text-center text-sm font-bold text-black"
+              >
+                Book Now
+              </a>
+            </div>
+          </div>
+        </nav>
+      </header>
+
+      <main>
+        <section id="home" class="relative flex min-h-screen items-center overflow-hidden pt-24">
+          <div class="absolute inset-0">
+            <img
+              src="assets/images/hero.svg"
+              alt="Vehicle detailing hero"
+              data-slot="hero"
+              class="h-full w-full object-cover"
+            />
+            <div class="absolute inset-0 bg-gradient-to-r from-black via-black/85 to-black/50"></div>
+            <div class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-black/25"></div>
+          </div>
+
+          <div class="pointer-events-none absolute inset-0 opacity-60">
+            <div class="absolute left-[14%] top-[18%] h-28 w-px bg-gradient-to-b from-transparent via-white/25 to-transparent"></div>
+            <div class="absolute left-[14%] top-[18%] h-px w-40 bg-gradient-to-r from-transparent via-white/25 to-transparent"></div>
+            <div class="absolute bottom-[18%] right-[20%] h-36 w-px bg-gradient-to-b from-transparent via-white/15 to-transparent"></div>
+          </div>
+
+          <div class="relative mx-auto w-full max-w-7xl px-4 py-16 sm:px-6 lg:px-8">
+            <div class="max-w-3xl">
+              <div class="reveal mb-6 inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/8 px-4 py-2 text-[11px] font-semibold uppercase tracking-[0.28em] text-white/75 backdrop-blur">
+                <span class="h-2 w-2 rounded-full bg-white"></span>
+                Professional Auto Detailing
+              </div>
+
+              <h1 class="reveal text-5xl font-black leading-[0.92] tracking-tight text-white sm:text-6xl lg:text-8xl">
+                LOCAL BROS
+                <span class="block text-white/20">AUTO</span>
+                <span class="block">PROTECTION</span>
+              </h1>
+
+              <p class="reveal mt-6 max-w-xl text-base leading-7 text-white/65 sm:text-lg">
+                Premium mobile detailing services that come to you. We make your car look
+                showroom-ready with deep cleaning, paint protection, and finish-focused care.
+              </p>
+
+              <div class="reveal mt-8 flex flex-wrap gap-4">
+                <a
+                  href="#contact"
+                  class="inline-flex items-center rounded-full bg-white px-7 py-3.5 text-sm font-bold uppercase tracking-[0.18em] text-black transition hover:bg-white/90"
+                >
+                  Book a Detail
+                </a>
+                <a
+                  href="#services"
+                  class="inline-flex items-center rounded-full border border-white/25 px-7 py-3.5 text-sm font-semibold uppercase tracking-[0.18em] text-white transition hover:bg-white/8"
+                >
+                  View Services
+                </a>
+              </div>
+
+              <div class="reveal mt-14 grid max-w-2xl grid-cols-1 gap-6 sm:grid-cols-3 sm:gap-8">
+                <div>
+                  <p class="text-3xl font-black tracking-tight">500+</p>
+                  <p class="mt-1 text-[11px] uppercase tracking-[0.28em] text-white/45">Cars Detailed</p>
+                </div>
+                <div>
+                  <p class="text-3xl font-black tracking-tight">5★</p>
+                  <p class="mt-1 text-[11px] uppercase tracking-[0.28em] text-white/45">Average Rating</p>
+                </div>
+                <div>
+                  <p class="text-3xl font-black tracking-tight">3+</p>
+                  <p class="mt-1 text-[11px] uppercase tracking-[0.28em] text-white/45">Years Experience</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="absolute bottom-6 left-1/2 hidden -translate-x-1/2 flex-col items-center gap-2 md:flex">
+            <span class="text-[11px] uppercase tracking-[0.35em] text-white/35">Scroll</span>
+            <div class="scroll-indicator"></div>
+          </div>
+        </section>
+
+        <section id="services" class="bg-black py-24 sm:py-28">
+          <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+            <div class="reveal max-w-2xl">
+              <p class="section-label">Services</p>
+              <h2 class="section-title">Mobile detailing built around clean results.</h2>
+              <p class="section-copy">
+                A modern service lineup designed for daily drivers, weekend cars, and vehicles that
+                need real finish protection.
+              </p>
+            </div>
+
+            <div class="mt-12 grid gap-6 md:grid-cols-2 xl:grid-cols-4">
+              <article class="service-card reveal">
+                <p class="service-number">01</p>
+                <h3 class="service-title">Full Detail</h3>
+                <p class="service-copy">
+                  Exterior wash, decontamination, wheel cleaning, interior vacuum, wipe-down, and a
+                  crisp final finish.
+                </p>
+              </article>
+
+              <article class="service-card reveal">
+                <p class="service-number">02</p>
+                <h3 class="service-title">Interior Reset</h3>
+                <p class="service-copy">
+                  Deep interior treatment for carpets, seats, plastics, cupholders, door panels, and
+                  high-touch areas.
+                </p>
+              </article>
+
+              <article class="service-card reveal">
+                <p class="service-number">03</p>
+                <h3 class="service-title">Paint Enhancement</h3>
+                <p class="service-copy">
+                  Gloss-focused polishing that lifts minor haze and improves depth, clarity, and
+                  reflection.
+                </p>
+              </article>
+
+              <article class="service-card reveal">
+                <p class="service-number">04</p>
+                <h3 class="service-title">Ceramic Protection</h3>
+                <p class="service-copy">
+                  Long-term surface protection that helps defend your paint and keeps maintenance
+                  easier.
+                </p>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <section id="about" class="bg-[#050505] py-24 sm:py-28">
+          <div class="mx-auto grid max-w-7xl items-center gap-12 px-4 sm:px-6 lg:grid-cols-[1.05fr_0.95fr] lg:px-8">
+            <div class="reveal overflow-hidden rounded-[28px] border border-white/10 bg-white/5 shadow-glow">
+              <img
+                src="assets/images/about.svg"
+                alt="About Local Bros Auto Detail"
+                data-slot="about"
+                class="h-full w-full object-cover"
+              />
+            </div>
+
+            <div class="reveal">
+              <p class="section-label">About</p>
+              <h2 class="section-title">A premium look without the shop-drop hassle.</h2>
+              <p class="section-copy">
+                Local Bros focuses on high-end mobile detailing with a simple goal: protect the look
+                of your vehicle while keeping the experience convenient, polished, and consistent.
+              </p>
+              <p class="mt-5 max-w-2xl text-base leading-7 text-white/62">
+                We built this layout around the original export you shared, then cleaned it up into a
+                GitHub-friendly static site you can own, edit, and publish without a build step.
+              </p>
+
+              <div class="mt-8 grid gap-4 sm:grid-cols-3">
+                <div class="stat-card">
+                  <p class="stat-value">500+</p>
+                  <p class="stat-label">Vehicles Finished</p>
+                </div>
+                <div class="stat-card">
+                  <p class="stat-value">3+</p>
+                  <p class="stat-label">Years Experience</p>
+                </div>
+                <div class="stat-card">
+                  <p class="stat-value">150+</p>
+                  <p class="stat-label">5-Star Reviews</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="gallery" class="bg-black py-24 sm:py-28">
+          <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+            <div class="reveal max-w-2xl">
+              <p class="section-label">Gallery</p>
+              <h2 class="section-title">Finish-focused work that looks sharp on every angle.</h2>
+              <p class="section-copy">
+                Drop your real photos into the placeholders below and this section becomes your proof
+                of work immediately.
+              </p>
+            </div>
+
+            <div class="mt-12 grid gap-5 sm:grid-cols-2 xl:grid-cols-3">
+              <article class="gallery-card reveal">
+                <img src="assets/images/gallery-1.svg" alt="Gallery image 1" data-slot="gallery-1" class="gallery-image" />
+              </article>
+              <article class="gallery-card reveal">
+                <img src="assets/images/gallery-2.svg" alt="Gallery image 2" data-slot="gallery-2" class="gallery-image" />
+              </article>
+              <article class="gallery-card reveal">
+                <img src="assets/images/gallery-3.svg" alt="Gallery image 3" data-slot="gallery-3" class="gallery-image" />
+              </article>
+              <article class="gallery-card reveal">
+                <img src="assets/images/gallery-4.svg" alt="Gallery image 4" data-slot="gallery-4" class="gallery-image" />
+              </article>
+              <article class="gallery-card reveal">
+                <img src="assets/images/gallery-5.svg" alt="Gallery image 5" data-slot="gallery-5" class="gallery-image" />
+              </article>
+              <article class="gallery-card reveal">
+                <img src="assets/images/gallery-6.svg" alt="Gallery image 6" data-slot="gallery-6" class="gallery-image" />
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <section id="testimonials" class="bg-[#050505] py-24 sm:py-28">
+          <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+            <div class="reveal max-w-2xl">
+              <p class="section-label">Reviews</p>
+              <h2 class="section-title">What the experience should feel like.</h2>
+              <p class="section-copy">
+                These are clean placeholder testimonials you can swap with your real customer reviews.
+              </p>
+            </div>
+
+            <div class="mt-12 grid gap-6 lg:grid-cols-3">
+              <article class="review-card reveal">
+                <p class="review-stars">★★★★★</p>
+                <p class="review-copy">
+                  “Super responsive, showed up on time, and the finish looked unreal. My car felt
+                  better than dealership delivery.”
+                </p>
+                <p class="review-name">— Customer Review Placeholder</p>
+              </article>
+              <article class="review-card reveal">
+                <p class="review-stars">★★★★★</p>
+                <p class="review-copy">
+                  “Interior came back spotless, the trim looked refreshed, and the whole process was
+                  easy from booking to finish.”
+                </p>
+                <p class="review-name">— Customer Review Placeholder</p>
+              </article>
+              <article class="review-card reveal">
+                <p class="review-stars">★★★★★</p>
+                <p class="review-copy">
+                  “Clean branding, clean communication, and an even cleaner result. Exactly the kind
+                  of premium detailing service I wanted.”
+                </p>
+                <p class="review-name">— Customer Review Placeholder</p>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <section id="contact" class="bg-black py-24 sm:py-28">
+          <div class="mx-auto grid max-w-7xl gap-8 px-4 sm:px-6 lg:grid-cols-[0.9fr_1.1fr] lg:px-8">
+            <div class="reveal rounded-[28px] border border-white/10 bg-white/5 p-7 sm:p-9">
+              <p class="section-label">Contact</p>
+              <h2 class="section-title max-w-md">Ready to book your next detail?</h2>
+              <p class="section-copy max-w-md">
+                Update the contact info in the config file, connect the form to your preferred form
+                handler, and this page is ready to publish.
+              </p>
+
+              <div class="mt-8 space-y-4 text-sm text-white/75">
+                <div>
+                  <p class="contact-label">Phone</p>
+                  <a data-bind="phone-link" href="#" class="contact-value">(555) 555-5555</a>
+                </div>
+                <div>
+                  <p class="contact-label">Email</p>
+                  <a data-bind="email-link" href="#" class="contact-value">hello@example.com</a>
+                </div>
+                <div>
+                  <p class="contact-label">Service Area</p>
+                  <p data-bind="service-area" class="contact-value">Your city / service region</p>
+                </div>
+                <div>
+                  <p class="contact-label">Instagram</p>
+                  <a data-bind="instagram-link" href="#" target="_blank" rel="noreferrer" class="contact-value">@yourhandle</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="reveal rounded-[28px] border border-white/10 bg-[#080808] p-7 sm:p-9">
+              <form id="contact-form" class="space-y-5">
+                <div class="grid gap-5 sm:grid-cols-2">
+                  <div>
+                    <label class="form-label" for="name">Name</label>
+                    <input id="name" name="name" type="text" class="form-input" placeholder="Your name" />
+                  </div>
+                  <div>
+                    <label class="form-label" for="phone">Phone</label>
+                    <input id="phone" name="phone" type="tel" class="form-input" placeholder="Best number" />
+                  </div>
+                </div>
+
+                <div class="grid gap-5 sm:grid-cols-2">
+                  <div>
+                    <label class="form-label" for="email">Email</label>
+                    <input id="email" name="email" type="email" class="form-input" placeholder="you@example.com" />
+                  </div>
+                  <div>
+                    <label class="form-label" for="service">Service</label>
+                    <select id="service" name="service" class="form-input">
+                      <option>Full Detail</option>
+                      <option>Interior Reset</option>
+                      <option>Paint Enhancement</option>
+                      <option>Ceramic Protection</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div>
+                  <label class="form-label" for="vehicle">Vehicle</label>
+                  <input id="vehicle" name="vehicle" type="text" class="form-input" placeholder="Year / Make / Model" />
+                </div>
+
+                <div>
+                  <label class="form-label" for="message">Message</label>
+                  <textarea
+                    id="message"
+                    name="message"
+                    rows="5"
+                    class="form-input min-h-[150px] resize-y"
+                    placeholder="Tell us what you need cleaned or protected"
+                  ></textarea>
+                </div>
+
+                <button
+                  type="submit"
+                  class="inline-flex items-center rounded-full bg-white px-7 py-3.5 text-sm font-bold uppercase tracking-[0.18em] text-black transition hover:bg-white/90"
+                >
+                  Send Request
+                </button>
+
+                <p id="form-note" class="text-sm text-white/45">
+                  Demo form only. Connect this to Formspree, Basin, Getform, or Netlify Forms before going live.
+                </p>
+              </form>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer class="border-t border-white/10 bg-black py-8">
+        <div class="mx-auto flex max-w-7xl flex-col gap-3 px-4 text-sm text-white/45 sm:px-6 lg:flex-row lg:items-center lg:justify-between lg:px-8">
+          <p>© <span id="year"></span> Local Bros Auto Detail. All rights reserved.</p>
+          <p>Static GitHub-ready version rebuilt from your provided export.</p>
+        </div>
+      </footer>
+    </div>
+
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
